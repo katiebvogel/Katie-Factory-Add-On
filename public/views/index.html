@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="olympicApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="vendors/angular/angular.min.js" charset="utf-8" ></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <base href="/" />
+    <title>Marketable Olympian Picker</title>
+  </head>
+<body>
+
+    <section class="wrapper">
+    <h1>Who can sell the Olympics?</h1>
+    <img src="/vendors/usa-logo.png" />
+  
+    <a href="/lifters"><button>Weightlifter</button></a>
+    <a href="/wrestlers"><button>Wrestler</button></a>
+    <a href="/boxers"><button>Boxer</button></a>
+    <a href="/kayakers"><button>Kayaker</button></a>
+    <a href="/judoka"><button>Judoka</button></a>
+
+    <div ng-view class="olympianDisplay">
+
+
+
+    </div>
+    </section>
+  </body>
+</html>
